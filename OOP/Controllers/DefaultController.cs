@@ -67,5 +67,26 @@ namespace OOP.Controllers
             return View();
         }
 
+
+        public IActionResult Deneme()
+        {
+            Sehirler sehirler = new Sehirler();
+            
+
+            sehirler.SehirId = 1;
+            sehirler.SehirAd = "Kiev";
+            sehirler.Nufus = 1000;
+            sehirler.Ulke = "Ukrayna";
+            sehirler.renk1 = "Mavi";
+            sehirler.renk2 = "Sarı";
+            ViewBag.s1 = sehirler.SehirId;
+            ViewBag.s2 = sehirler.SehirAd;
+            ViewBag.s3 = sehirler.Nufus;
+            ViewBag.s4 = sehirler.Ulke;
+            ViewBag.s5 = sehirler.renk1;
+            ViewBag.s6 = sehirler.renk2;
+
+            return View();
+        }
     }
 }
