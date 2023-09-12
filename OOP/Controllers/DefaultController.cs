@@ -27,7 +27,7 @@ namespace OOP.Controllers
             int s1 = 20;
             int s2 = 30;
             int sonuc = s1 + s2;
-            return sonucc;
+            return sonuc;
 
         }
 
